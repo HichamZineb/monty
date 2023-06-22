@@ -22,6 +22,7 @@ void code_execute(char *arg_v, stack_t **stack, unsigned int line_number)
 		{"div", _div},
 		{"mul", mul},
 		{"mod", mod},
+		{"pstr", pstr},
 		{NULL, NULL}
 	};
 	int i;
