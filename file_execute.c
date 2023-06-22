@@ -9,7 +9,7 @@
 void file_execute(stack_t **stack)
 {
 	char *arg_v = NULL;
-	size_t length;
+	size_t length = 0;
 	ssize_t line_read;
 	unsigned int line_number = 0;
 

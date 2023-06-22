@@ -13,7 +13,7 @@ stack_t *add_node(stack_t **stack, const int data)
 
 	new_node = malloc(sizeof(stack_t));
 
-	if (!new_node)
+	if (new_node == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
 		free_stack(*stack);
@@ -23,7 +23,7 @@ stack_t *add_node(stack_t **stack, const int data)
 	new_node->n = data;
 	new_node->prev = NULL;
 
-	if (!*stack)
+	if (*stack == NULL)
 		new_node->next = NULL;
 	else
 	{
