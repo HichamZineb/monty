@@ -65,5 +65,6 @@ void push(stack_t **stack, unsigned int line_number);
 int isanumber(char *s);
 stack_t *add_node(stack_t **stack, const int data);
 void pall(stack_t **stack, unsigned int line_number);
+void pint(stack_t **stack, unsigned int line_number);
 
 #endif /* MONTY_H */
