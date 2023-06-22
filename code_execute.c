@@ -20,6 +20,7 @@ void code_execute(char *arg_v, stack_t **stack, unsigned int line_number)
 		{"nop", nop},
 		{"sub", sub},
 		{"div", _div},
+		{"mul", mul},
 		{NULL, NULL}
 	};
 	int i;
